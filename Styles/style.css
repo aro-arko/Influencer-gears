@@ -55,6 +55,10 @@ main{
 }
 .container{
     width: 1200px;
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
 }
 .prebook{
     display: flex;
@@ -170,15 +174,26 @@ main{
     width: 16px;
     color: #FB8200;
 }
-
+.popular-collection .see-more p{
+    text-align: end;
+    font-weight: 700;
+    font-size: 16px;
+    color: #E02C6DDE;
+}
+.popular-collection .see-more p span{
+    margin-right: 8px;
+}
 
 /* ----------------------
         Feature Products
 --------------------------*/
 .feature-products{
     margin-top: 100px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* justify-content: space-around; */
+    justify-items: center;
+    margin-bottom: 100px;
 }
 .feature-info{
     width: 610px;
